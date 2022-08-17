@@ -45,9 +45,32 @@
 	<section>
 		<h2>Cat Form</h2>
 		<form action="https://freecatphotoapp.com/submit-cat-photo">
-			<input type="text">
+			<fieldset>
+				<legend>Is your cat an indoor or outdoor cat?</legend>
+				<label>
+					<input id="indoor" type="radio" name="indoor-outdoor" value="indoor">Indoor
+				</label>
+				<label><input id="outdoor" type="radio" name="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
+			</fieldset>
+				<fieldset>
+					<legend>What's your cat's personality?
+						</legend>
+						<label><input id="loving" type="checkbox" name="personality" value="Loving" checked>
+						</label>
+						<label><input id="lazy" type="checkbox" name="personality" value="Lazy" checked>
+						</label>
+						<label><input id="energetic" type="checkbox" name="personality" value="Energetic" checked>
+						</label>
+					</fieldset>
+					<input type="text" name="catphotourl" placeholder="cat photo url" required> 
+					<button type="submit">Submit</button>
 		</form>	
 	</section>
 </main>
+<footer>
+	<p>
+		No Copyright-<a href="https://yishacodes.github.io/cat-food-app/file/index.html"> CatFoodApp</a>
+	</p>
+</footer>
 </body>
 </html>
